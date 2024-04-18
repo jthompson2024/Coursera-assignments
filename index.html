@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Module 2 Assignment</title>
+<style>
+
+/********** Base styles **********/
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: mintcream;
+}
+
+.container {
+    position: relative;
+    margin: 1px;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 190%;
+  text-align: center;
+  background-color: #a0c4ff;
+  color: black;
+  padding: 20px 0;
+}
+
+.row {
+    width: 100%;
+}
+
+.section {
+    position: relative;
+    overflow: hidden;
+    margin: 8px;
+    padding: 16px;
+    border: 1px black solid;
+}
+
+/* Section title styles */
+.section-title {
+    font-size: 135%;
+    position: absolute;
+    float: right;
+    top: 0;
+    right: 0;
+    border-left: 1px black solid;
+    border-bottom: 1px black solid;
+    padding: 5px 25px;
+}
+
+.section p {
+    padding-top: 30px;
+    text-align: justify;
+}
+
+#p1 {
+    background-color: #fdffb6;
+}
+
+#p2 {
+    background-color: #caffbf;
+}
+
+#p3 {
+    background-color: #9bf6ff;
+}
+
+#name-chicken {
+    background-color: #ffc6ff;
+}
+
+#name-beef {
+    background-color: #ffc6ff;
+}
+
+#name-sushi {
+    background-color: #ffc6ff;
+}
+
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        width: 33.3%;
+    }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        width: 50%;
+        float: left;
+        display: block;
+    }
+    .col-md-12 {
+        width: 100%;
+        float: left;
+        display: block;
+    }
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+    .col-sm-12 {
+        width: 100%;
+        float: left;
+        display: block;
+    }
+}
+</style>
+</head>
+
+<body>
+    <div class="container">
+     <h1>Our Menu</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="section" id="p1">
+                <div class="section-title" id="name-chicken">Chicken</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, dolor et aliquam imperdiet,
+                    orci
+                    turpis porttitor massa, sed tincidunt neque mi non enim. Mauris imperdiet eu tortor vitae accumsan.
+                    Integer tempor pellentesque turpis vestibulum consequat. Vivamus sit amet quam id eros pretium
+                    condimentum. Sed nisi est, fermentum ac augue ac, congue euismod risus.
+                </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="section" id="p2">
+                <div class="section-title" id="name-beef">Beef</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, dolor et aliquam imperdiet,
+                    orci
+                    turpis porttitor massa, sed tincidunt neque mi non enim. Mauris imperdiet eu tortor vitae accumsan.
+                    Integer tempor pellentesque turpis vestibulum consequat. Vivamus sit amet quam id eros pretium
+                    condimentum. Sed nisi est, fermentum ac augue ac, congue euismod risus.
+                </p>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="section" id="p3">
+                <div class="section-title" id="name-sushi">Sushi</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, dolor et aliquam imperdiet,
+                    orci
+                    turpis porttitor massa, sed tincidunt neque mi non enim. Mauris imperdiet eu tortor vitae accumsan.
+                    Integer tempor pellentesque turpis vestibulum consequat. Vivamus sit amet quam id eros pretium
+                    condimentum. Sed nisi est, fermentum ac augue ac, congue euismod risus.
+                </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body></html>
